@@ -14,7 +14,7 @@ Use `git clone <url>` to clone it to your local device.
 Execute `install` with [npm](https://docs.npmjs.com/cli/init), or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the project:
 
 ```bash
-npx install
+npm install
 ```
 
 ```bash
@@ -31,6 +31,6 @@ Config your environment varaible for Sanity.
 
 Execute `npm run dev` to start website server & `sanity start` to start sanity server. Goto corresponding localhost addresses to see both the frontend and backend.
 
-## how to deploy
+## How to deploy
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
