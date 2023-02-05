@@ -1,3 +1,5 @@
+import { Reference } from "@sanity/types";
+
 export interface Post {
     _id: string;
     _createdAt: string;
@@ -17,4 +19,14 @@ export interface Post {
         current: string;
     };
     body: [object];
+}
+
+interface Comment {
+    _id: string;
+    _createdAt: string;
+    name: string;
+    email: string;
+    comment: string;
+    approved: boolean;
+    post: Reference;
 }
