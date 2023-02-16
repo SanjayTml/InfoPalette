@@ -1,27 +1,36 @@
-# Next.js + Tailwind CSS Example
+# Infopalette | Next JS, Sanity, Tailwind
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is an example website of [infopalette.com](https://infopalette.com) that uses [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js and [Sanity CMS](https://www.sanity.io/).
 
-## Deploy your own
+## Deployment 
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+It has been deployed using [Vercel](https://vercel.com/dashboard). Visit the live website here: https://infopalette.vercel.app/
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-## How to use
+## How to edit
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Use `git clone <url>` to clone it to your local device. 
+
+Execute `install` with [npm](https://docs.npmjs.com/cli/init), or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the project:
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+npm install
 ```
 
 ```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+yarn install
 ```
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+Also install the sanity package inside infopalette folder to use the Sanity CMS.
+
+Edit using your favorite IDE.
+
+## How to run
+
+Config your environment varaible for Sanity.
+
+Execute `npm run dev` to start website server & `sanity start` to start sanity server. Goto corresponding localhost addresses to see both the frontend and backend.
+
+## How to deploy
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
