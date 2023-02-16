@@ -1,16 +1,15 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../components/Header'
 import { sanityClient, urlFor } from '../sanity'
-import { Post } from '../typing'
+import { Category, Post } from '../typing'
 
 interface Props {
   posts: [Post];
+  categories: [Category];
 }
 
-export default function Home({ posts }: Props) {
+export default function Home({ posts, categories }: Props) {
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
@@ -18,7 +17,7 @@ export default function Home({ posts }: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header {...categories}/>
 
       <div className='flex justify-between items-center border-black border py-10 ld:py-0'>
         <div className='px-10 space-y-5'>

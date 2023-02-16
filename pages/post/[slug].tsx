@@ -3,11 +3,12 @@ import { useState } from "react";
 import PortableText from "react-portable-text";
 import Header from "../../components/Header";
 import { sanityClient, urlFor } from "../../sanity";
-import { Post } from "../../typing";
+import { Category, Post } from "../../typing";
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 interface Props {
     post: Post;
+    categories: [Category];
 }
 
 interface IFormInput {
@@ -17,9 +18,7 @@ interface IFormInput {
     comment: string;
 }
 
-function Post({ post }: Props) {
-
-    console.log(post)
+function Post({ post, categories }: Props) {    // Get post by destructuring props
 
     const [submitted, setSubmitted] = useState(false);
 
@@ -40,7 +39,7 @@ function Post({ post }: Props) {
 
     return (
         <main>
-            <Header />
+            <Header {...categories}/>
             <img
                 className="w-full h-40 object-cover"
                 src={urlFor(post.mainImage).url()!} alt="post-image"

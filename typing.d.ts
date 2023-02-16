@@ -10,6 +10,7 @@ export interface Post {
     };
     comments: [Comment];
     description: string;
+    categories: Reference;
     mainImage: {
         asset: {
             url: string;
@@ -29,4 +30,10 @@ interface Comment {
     comment: string;
     approved: boolean;
     post: Reference;
+}
+
+export interface Category {
+    _id: string;
+    _createdAt: string;
+    title: string;
 }
